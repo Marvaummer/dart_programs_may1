@@ -52,7 +52,7 @@ void main() {
 
   var l=[1,2,3,4];
   var s={10,20,30,40};
-  Map m10=Map.fromIterables(l, s);
+  Map m10=Map.fromIterables(l,s);
   print("map10 = $m10");
 
   m10.forEach((key, value) {
