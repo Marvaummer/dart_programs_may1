@@ -3,6 +3,7 @@ class Students{//parent class
   String? name;
   String? email;
   int? phone;
+  String? location="kakkanad";
 
   void course(String course){
     print("studying $course at luminar");
@@ -10,14 +11,15 @@ class Students{//parent class
 }
 
 class Amal extends Students{//child class/derived class
-  void show(){
-    print("name = $name");
-    print("email = $email");
-    print("phone = $phone");
+  void show(String n,String e,int p){
+    print("name = ${name =n}");
+    print("email = ${email=e}");
+    print("phone = ${phone=p}");
+    print("place=$location");
   }
 }
 void main(){
   Amal obj =Amal();
-  // obj.show();
+  obj.show("amal","amal@gmail",10);
   obj.course("python");
 }
